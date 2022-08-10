@@ -66,3 +66,62 @@ nav {
 //   border-radius: 5rem;
 //   box-shadow: 3px 3px #38a8ce;
 // }
+
+#plant-left {
+  animation: plant 1.5s ease infinite alternate;
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-20%);
+  }
+}
+
+#plant-right {
+  animation: plant 1.5s ease infinite alternate 0.3s;
+}
+
+#me {
+  animation: me 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-3deg);
+  }
+
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
