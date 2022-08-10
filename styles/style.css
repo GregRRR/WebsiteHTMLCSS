@@ -112,4 +112,86 @@ nav ul {
 }
 .intro-social a {
   margin-right: 2rem;
+}
+
+#plant-left {
+  -webkit-animation: plant 1.5s ease infinite alternate;
+          animation: plant 1.5s ease infinite alternate;
+}
+
+@-webkit-keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-20%);
+  }
+}
+#plant-right {
+  -webkit-animation: plant 1.5s ease infinite alternate 0.3s;
+          animation: plant 1.5s ease infinite alternate 0.3s;
+}
+
+#me {
+  -webkit-animation: me 2s ease-in-out infinite alternate;
+          animation: me 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  -webkit-animation: clock 1.5s infinite linear;
+          animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes me {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-20%);
+  }
+}
+@-webkit-keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
